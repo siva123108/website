@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Course Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #444;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      display: block;
+    }
+
+    nav a:hover {
+      background-color: #666;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    form input, form textarea, form select {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      box-sizing: border-box;
+    }
+
+    form input[type="submit"] {
+      background-color: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    form input[type="submit"]:hover {
+      background-color: #555;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    .nav-link {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Online Course Platform</h1>
+  </header>
+
+  <nav>
+    <a href="#home" class="nav-link">Home</a>
+    <a href="#about" class="nav-link">About Us</a>
+    <a href="#register" class="nav-link">Register</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h2>Welcome to Our Online Course Website!</h2>
+    <p>Learn from the best instructors across various domains including programming, business, design, and more!</p>
+
+    <h3>Featured Course</h3>
+    <p><strong>Web Development Bootcamp</strong> - Learn HTML, CSS, JavaScript, and build real-world projects.</p>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We are a team of passionate educators and developers committed to providing top-quality online education.</p>
+    <p>Our mission is to make learning accessible and affordable to everyone, everywhere.</p>
+  </section>
+
+  <!-- Register Section -->
+  <section id="register">
+    <h2>Register for a Course</h2>
+    <form onsubmit="alert('Registration Submitted!'); return false;">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="course">Select Course:</label>
+      <select id="course" name="course">
+        <option>Web Development Bootcamp</option>
+        <option>Python for Beginners</option>
+        <option>Graphic Design Basics</option>
+        <option>Digital Marketing</option>
+      </select>
+
+      <label for="message">Message (optional):</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <input type="submit" value="Register Now">
+    </form>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>📧 Email: sivasankarsiva42673@gmail.com</p>
+    <p>📞 Phone: +91-6302328925</p>
+    <p>🏢 Address: 123, kamalapuram, kadapa city, India</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Online Course Platform | All rights reserved.
+  </footer>
+
+</body>
+</html>
+
